@@ -102,6 +102,7 @@ p {
 
 
 .header-link {
+    display: block;
     text-decoration: none;
     color: var(--header-link-color);
     padding-top: 32px;
@@ -117,7 +118,6 @@ p {
 .header-nav-block {
     display: flex;
     align-items: center;
-    height: 80px;
 }
 
 .header-info-block {
@@ -132,6 +132,7 @@ p {
 }
 
 .header-info-mail {
+    display: block;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -143,6 +144,7 @@ p {
 }
 
 .header-info-tel {
+    display: block;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -253,8 +255,10 @@ p {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--main-back-color);
-    max-width: 100%;
+    max-width: 696px;
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-button {
@@ -349,7 +353,6 @@ p {
 .main-section-4 {
     background-color: var(--main-backgraund);
     list-style-type: none;
-    width: 1600px;
     margin: 0 auto;
 }
 
@@ -408,15 +411,8 @@ p {
 
 .footer-content {
     background-color: var(--background-color);
-    width: 1600px;
-    margin: 0 auto;
-    display: block;
-}
-
-.footer-div {
-    display: inline-block;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .logo-footer {
@@ -425,7 +421,7 @@ p {
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--main-back-color);
     text-decoration: none;
@@ -440,7 +436,7 @@ p {
     list-style-type: none;
 }
 
-.footer-info-block > li {
+.footer-info-block > li:not(:last-child) {
     margin-bottom: 9px;
 }
 
